@@ -1,4 +1,4 @@
-package MercatorKairos;
+package MercatorKairos.src;
 
 public class Main {
     public static void main(String[] args) {

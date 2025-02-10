@@ -1,7 +1,4 @@
-package MercatorKairos;
-
-import java.util.ArrayList;
-import java.util.Vector;
+package MercatorKairos.src;
 
 public class Player {
     //Atributos.
