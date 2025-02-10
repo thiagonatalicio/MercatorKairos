@@ -1,4 +1,4 @@
-package MercatorKairos.src;
+package MercatorKairos.src.entidades;
 
 public class Item {
     private String nome;
