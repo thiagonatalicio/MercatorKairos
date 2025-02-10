@@ -7,7 +7,7 @@ public class Player {
     private int forca;
     private int velocidade;
     private Item[] inventario = new Item[10];
-
+    private float dinheiro;
     //Métodos especiais.
 
     public int getForca() {
