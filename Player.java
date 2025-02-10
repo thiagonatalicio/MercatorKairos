@@ -1,12 +1,15 @@
 package MercatorKairos;
 
+import java.util.ArrayList;
+import java.util.Vector;
+
 public class Player {
     //Atributos.
     private String nome;
     private int vida;
     private int forca;
     private int velocidade;
-    private Item[] inventario [10];
+    private Item[] inventario = new Item[10];
 
     //Métodos especiais.
 
