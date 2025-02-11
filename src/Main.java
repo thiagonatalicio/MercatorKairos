@@ -1,5 +1,8 @@
 package MercatorKairos.src;
 
+import MercatorKairos.src.entidades.Player;
+import MercatorKairos.src.entidades.Save;
+
 import java.util.Scanner;
 
 public class Main {
@@ -20,6 +23,13 @@ public class Main {
                     break label;
                 case "1":
                     System.out.println("Criando Novo Jogo...");
+                    Save novoSave = new Save();
+                    novoSave.setPlayer(new Player());
+                    Player player = novoSave.getPlayer();
+                    System.out.print("Nome do personagem: ");
+                    player.setNome(in.nextLine());
+
+                    System.out.println(novoSave.getNome() + " criado com sucesso!");
                     break;
                 case "2":
                     System.out.println("Escolha:");
