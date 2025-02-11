@@ -1,11 +1,11 @@
 package MercatorKairos.src.entidades;
 
 public class Construcao {
-    //Atributos.
+    //Atributos:
     private int endereco;
     private String nomeDoProprietario;
-    //Métodos especiais.
+    //Métodos especiais:
 
-    //Métodos.
+    //Métodos:
 
 }

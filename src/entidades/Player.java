@@ -1,14 +1,14 @@
 package MercatorKairos.src.entidades;
 
 public class Player {
-    //Atributos.
+    //Atributos:
     private String nome;
     private int vida;
     private int forca;
     private int velocidade;
     private Item[] inventario = new Item[10];
     private float dinheiro;
-    //Métodos especiais.
+    //Métodos especiais:
 
     public int getForca() {
         return forca;
@@ -32,4 +32,7 @@ public class Player {
     public void setNome(String nome) {
         this.nome = nome;
     }
+
+    //Métodos:
+
 }
