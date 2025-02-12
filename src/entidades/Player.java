@@ -8,7 +8,16 @@ public class Player {
     private int velocidade;
     private Item[] inventario = new Item[10];
     private float dinheiro;
+    private Lugar localizacao;
     //Métodos especiais:
+
+    public Lugar getLocalizacao() {
+        return localizacao;
+    }
+
+    public void setLocalizacao(Lugar localizacao) {
+        this.localizacao = localizacao;
+    }
 
     public int getForca() {
         return forca;

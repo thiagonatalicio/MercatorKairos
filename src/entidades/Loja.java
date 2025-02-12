@@ -28,6 +28,7 @@ public class Loja extends Construcao{
         int i = 0;
         while(this.estoque[i] != null){
             System.out.println(this.estoque[i].getNome());
+            i++;
         }
     }
     public void atender(){
@@ -36,6 +37,7 @@ public class Loja extends Construcao{
         int escolha = scanner.nextInt();
         switch(escolha){
             case 1:
+                mostrarItensAVenda();
 
                 break;
             case 2:

@@ -1,8 +1,7 @@
 package MercatorKairos.src.entidades;
 
-public class Construcao {
+public class Construcao extends Lugar{
     //Atributos:
-    private int endereco;
     private String nomeDoProprietario;
     //Métodos especiais:
 
