@@ -33,7 +33,9 @@ public class Loja extends Construcao{
         }
     }
 
-    public void venderItem(){
-        
+    public void venderItem(int indice){
+        if(indice != 0){
+
+        }
     }
 }
