@@ -43,5 +43,17 @@ public class Player {
     }
 
     //Métodos:
+    public void adquirirItem(Item item){
+        int i = 0;
+        while(this.inventario[i] != null){
+            i++;
+        }
+        this.inventario[i] = item;
+    }
+
+    public void mudarDeLocal(Lugar local, Player jogador){
+        setLocalizacao(local);
+        local.setJogador(jogador);
+    }
 
 }

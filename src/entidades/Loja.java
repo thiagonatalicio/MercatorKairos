@@ -5,7 +5,6 @@ public class Loja extends Construcao{
     private NPC atendente;
     private String tipo;
     private Item[] estoque = new Item[50];
-    private Player jogador;
     //Métodos especiais:
 
     public String getTipo() {
