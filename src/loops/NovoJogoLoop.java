@@ -12,16 +12,22 @@ public class NovoJogoLoop extends Loop {
 
     @Override
     public void loop() {
-        while (true) {
-            System.out.println("Criando Novo Jogo...");
-            Save novoSave = new Save();
-            novoSave.setPlayer(new Player());
-            Player player = novoSave.getPlayer();
-            System.out.print("Nome do personagem: ");
-            player.setNome(in.nextLine());
+        Save novoSave = new Save();
+        Player player = new Player();
+        RodarJogoLoop rodarJogoLoop = new RodarJogoLoop(in, novoSave);
 
-            System.out.println(novoSave.getNome() + " criado com sucesso!");
-            break;
-        }
+        novoSave.setPlayer(player);
+
+        System.out.println("\n[        Novo Jogo        ]");
+
+        System.out.print("Nome do personagem: ");
+        player.setNome(in.nextLine());
+
+        System.out.print("Nome do Save: ");
+        novoSave.setNome(in.nextLine());
+
+        System.out.println(novoSave.getNome() + " criado com sucesso!\n\n");
+
+        rodarJogoLoop.loop();
     }
 }

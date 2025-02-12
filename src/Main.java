@@ -1,5 +1,6 @@
 package MercatorKairos.src;
 
+import MercatorKairos.src.loops.CarregarJogoLoop;
 import MercatorKairos.src.loops.Loop;
 import MercatorKairos.src.loops.NovoJogoLoop;
 import MercatorKairos.src.ui.componentes.MenuDeEscolhaPorIndiceNumerico;
@@ -12,12 +13,17 @@ public class Main {
         MenuDeEscolhaPorIndiceNumerico menuPricipal = new MenuDeEscolhaPorIndiceNumerico(in);
 
         System.out.println("""
+                
+                
+                
+                
+                
                 +-------------------------------+
                 |        Mercator Kairós        |
                 +-------------------------------+""");
 
         menuPricipal.add("Novo Jogo", new NovoJogoLoop(in));
-        menuPricipal.add("Carregar", new Loop(in));
+        menuPricipal.add("Carregar", new CarregarJogoLoop(in));
         menuPricipal.exibir();
     }
 }
