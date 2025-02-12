@@ -1,6 +1,7 @@
 package MercatorKairos.src.entidades;
 
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class Save {
     private String nome;
@@ -9,7 +10,9 @@ public class Save {
     private final Cidades[] cidades = new Cidades[3];
 
     public Save() {
-        nome = "Mundo " + LocalDateTime.now().toString();
+        nome = "Mundo " + LocalDateTime.now().
+                format(DateTimeFormatter
+                        .ofPattern("yyyy-MM-dd hh:mm:ss"));
         cidades[0] = new Cidades();
     }
 
