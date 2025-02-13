@@ -1,4 +1,4 @@
-package MercatorKairos.src.loops;
+/* package MercatorKairos.src.loops;
 
 import MercatorKairos.src.entidades.Player;
 import MercatorKairos.src.entidades.Save;
@@ -27,3 +27,5 @@ public class CarregarJogoLoop extends Loop {
         rodarJogoLoop.loop();
     }
 }
+
+ */

@@ -1,4 +1,4 @@
-package MercatorKairos.src.entidades;
+/* package MercatorKairos.src.entidades;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -6,14 +6,14 @@ import java.time.format.DateTimeFormatter;
 public class Save {
     private String nome;
     private Player player;
-    private Cidades cidadeAtual;
-    private final Cidades[] cidades = new Cidades[3];
+    private Lugar cidadeAtual;
+    private final Lugar[] cidades = new Lugar[3];
 
     public Save() {
         nome = "Mundo " + LocalDateTime.now().
                 format(DateTimeFormatter
                         .ofPattern("yyyy-MM-dd hh:mm:ss"));
-        cidades[0] = new Cidades();
+        cidades[0] = new Lugar();
     }
 
     public String getNome() {
@@ -24,15 +24,15 @@ public class Save {
         this.nome = nome;
     }
 
-    public Cidades[] getCidades() {
+    public Lugar[] getLugar() {
         return cidades;
     }
 
-    public Cidades getCidadeAtual() {
+    public Lugar getCidadeAtual() {
         return cidadeAtual;
     }
 
-    public void setCidadeAtual(Cidades cidadeAtual) {
+    public void setCidadeAtual(Lugar cidadeAtual) {
         this.cidadeAtual = cidadeAtual;
     }
 
@@ -44,3 +44,6 @@ public class Save {
         this.player = player;
     }
 }
+
+
+ */
