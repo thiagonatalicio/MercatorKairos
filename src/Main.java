@@ -1,9 +1,6 @@
 package MercatorKairos.src;
 
-import MercatorKairos.src.entidades.Item;
-import MercatorKairos.src.entidades.Loja;
-import MercatorKairos.src.entidades.Lugar;
-import MercatorKairos.src.entidades.Player;
+import MercatorKairos.src.entidades.*;
 /*import MercatorKairos.src.loops.CarregarJogoLoop;
 import MercatorKairos.src.loops.Loop;
 import MercatorKairos.src.loops.NovoJogoLoop;
@@ -32,16 +29,18 @@ public class Main {
         menuPricipal.exibir();
 
        */
-        Lugar cidadeInicial = new Lugar("Afogados da Ingazeira", "Uma cidade meio seca.");
+        Cidade cidadeInicial = new Cidade("Afogados da Ingazeira", "Uma cidade meio seca.");
         Player jogador = new Player("Zeca Urubu", cidadeInicial);
         cidadeInicial.setJogador(jogador);
         Item salgado = new Item("Amburguer", "comida", 4f);
         Loja divaTrailer = new Loja("Trailer da diva", "um trailer fora do IF");
+        divaTrailer.setFora(cidadeInicial);
         divaTrailer.addItemEstoque(salgado);
         jogador.olharLocar();
         jogador.mudarDeLocal(divaTrailer);
         jogador.olharLocar();
         divaTrailer.venderItem(1);
         jogador.mostrarInventario();
+        salgado.descrever();
     }
 }

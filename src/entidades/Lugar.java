@@ -1,6 +1,6 @@
 package MercatorKairos.src.entidades;
 
-public class Lugar {
+public abstract class Lugar {
     //Atributos:
     protected String nome;
     protected String descricao;

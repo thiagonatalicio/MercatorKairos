@@ -46,6 +46,9 @@ public class Player {
     //Métodos:
     public void mostrarInventario(){
         System.out.println("========================");
+        System.out.println("      <Iventario>");
+        System.out.println("========================");
+
         for(int i = 0; i < 10; i++){
             if(inventario[i] != null){
                 System.out.println("- " + inventario[i].getNome());
@@ -67,8 +70,6 @@ public class Player {
         this.inventario[i + 1] = null;
     }
 
-
-
     public void mudarDeLocal(Lugar local){
         Player temporario = this.localizacao.getJogador();
         this.localizacao.setJogador(null);
@@ -76,6 +77,7 @@ public class Player {
         this.localizacao.setJogador(temporario);
         System.out.println(this.nome +" foi para " + this.localizacao.getNome());
     }
+
     public void olharLocar(){
         System.out.println("Descrição do local: " + this.localizacao.getDescricao());
     }
