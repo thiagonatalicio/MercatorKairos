@@ -29,18 +29,6 @@ public class Main {
         menuPricipal.exibir();
 
        */
-        Cidade cidadeInicial = new Cidade("Afogados da Ingazeira", "Uma cidade meio seca.");
-        Player jogador = new Player("Zeca Urubu", cidadeInicial);
-        cidadeInicial.setJogador(jogador);
-        Item salgado = new Item("Amburguer", "comida", 4f);
-        Loja divaTrailer = new Loja("Trailer da diva", "um trailer fora do IF");
-        divaTrailer.setFora(cidadeInicial);
-        divaTrailer.addItemEstoque(salgado);
-        jogador.olharLocar();
-        jogador.mudarDeLocal(divaTrailer);
-        jogador.olharLocar();
-        divaTrailer.venderItem(1);
-        jogador.mostrarInventario();
-        salgado.descrever();
+
     }
 }
