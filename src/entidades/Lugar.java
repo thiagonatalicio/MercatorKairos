@@ -35,7 +35,6 @@ public abstract class Lugar {
     }
 
     //Métodos:
-    public void descreverLugar(){
-        System.out.println(getDescricao());
-    }
+    public abstract void mostrarOpcoes();
+
 }

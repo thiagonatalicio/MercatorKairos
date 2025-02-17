@@ -29,6 +29,9 @@ public class Main {
         menuPricipal.exibir();
 
        */
-
+        Player jogador = new Player("Nathan" );
+        Lugar local = new Loja("Farmacia", "Uma farmácia com muitos remedios e wey");
+        Esta esta = new Esta(jogador, local);
+        esta.mostrarLugar();
     }
 }

@@ -1,10 +1,10 @@
 package MercatorKairos.src.entidades;
-import java.util.Scanner;
+
 public class Loja extends Construcao{
     //Atributos:
     private NPC atendente;
     private String tipo;
-    private Item[] estoque = new Item[50];
+
 
     public Loja(String nome, String descricao) {
         super(nome, descricao);
@@ -28,18 +28,11 @@ public class Loja extends Construcao{
     }
 
     //Métodos:
-
-    public void addItemEstoque(Item item){
-        int i = 0;
-        while (estoque[i] != null && i < 50){
-            i++;
-        }
-        if (i < 50){
-            this.estoque[i] = item;
-        } else {
-            System.out.println("item não add a loja: " + this.nome);
-        }
-
+    @Override
+    public void mostrarOpecoes(){
+        System.out.println("1) Sair da loja");
+        System.out.println("2) Comprar");
+        System.out.println("3) Vender");
     }
 
     public void mostrarItensAVenda(){

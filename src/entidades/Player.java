@@ -5,20 +5,11 @@ public class Player {
     private String nome;
     private Item[] inventario = new Item[10];
     private float dinheiro;
-    private Lugar localizacao;
     //Métodos especiais:
 
-    public Player(String nome, Lugar localizacao) {
+    public Player(String nome) {
         setNome(nome);
         setDinheiro(10f);
-        setLocalizacao(localizacao);
-    }
-
-    public Lugar getLocalizacao() {
-        return localizacao;
-    }
-    public void setLocalizacao(Lugar localizacao) {
-        this.localizacao = localizacao;
     }
 
     public String getNome() {
@@ -70,15 +61,4 @@ public class Player {
         this.inventario[i + 1] = null;
     }
 
-    public void mudarDeLocal(Lugar local){
-        Player temporario = this.localizacao.getJogador();
-        this.localizacao.setJogador(null);
-        setLocalizacao(local);
-        this.localizacao.setJogador(temporario);
-        System.out.println(this.nome +" foi para " + this.localizacao.getNome());
-    }
-
-    public void olharLocar(){
-        System.out.println("Descrição do local: " + this.localizacao.getDescricao());
-    }
 }
